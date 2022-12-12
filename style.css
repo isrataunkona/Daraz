@@ -1,0 +1,112 @@
+/* Common Styles & Utilities
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.button{
+    background-color: rgba(6, 101, 139, 0.658);
+    color: white;
+    border-radius:10px;
+}
+
+.span-name{
+    color: rgb(17, 136, 216);
+}
+
+
+/* Header Section */
+
+
+.navButton{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 8px;
+}
+
+/* Image Slider Section */
+
+.slider-header{
+    height: 584px;
+}
+
+
+.banner{
+    color:gainsboro;
+    text-align: center;
+    height: 230px;
+    margin-top: 7%;
+}
+
+/* Spinner */
+#spinner{
+    color:rgb(17, 136, 216) ;
+    display: none;
+}
+
+/* Card Section */
+.cards{
+    box-shadow: 1px 1px 20px;
+    height: 450px;
+    width: 370px;
+}
+
+#details{
+    box-shadow: 2px 2px 20px;
+    width: 600px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+#details-link{
+    text-decoration: none;
+    color: white;
+}
+
+#notFound{
+    box-shadow: none;
+    text-align: center;
+}
+
+/* Footer Section */
+footer{
+    background-color:rgb(11, 80, 126) ;
+}
+#footer-text{
+    color: white;
+}
+
+
+
+/* Custom Animation */
+.navButton:hover{
+    color: rgb(17, 136, 216);
+}
+
+.cards:hover{
+    transform: scale(1.02);
+}
+
+
+/* Custom Media Query */
+@media (max-width: 600px){
+    .navButton{
+        display: none;
+    }
+    #banner-text>h1{
+        font-size: 12px;
+    }
+    #banner-text>p{
+        font-size: 8px;
+    }
+
+    #details{
+        width: 90%;
+    }
+
+    .cards{
+        width: 90%;
+    }
+}

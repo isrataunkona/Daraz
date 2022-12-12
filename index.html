@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/605c1f1072.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap'); </style>
+
+
+    <title>iDroid Store</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="container d-flex justify-content-between my-4">
+        <div class="d-flex justify-content-between">
+            <div>
+                <img src="images/phone-image.jpg" alt="" height="80" width="70">
+            </div>
+            <div>
+                <h1>i<span class="span-name">Droid</span> Store</h1>
+                <p>Find your dream phone Online</p>
+            </div>
+        </div>
+        <div  class="d-flex mt-3">
+            <a class="navButton" href="">Home</a>
+            <a class="navButton" href="">iPhones</a>
+            <a class="navButton" href="">Androids</a>
+            <a class="navButton" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+
+    <!-- Image Slider Carousel -->
+    <section class="w-100 position-relative">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner img-slider">
+            <div class="carousel-item active">
+              <img  src="images/image-1.jfif" class="img-fluid d-block h-100 w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img  src="images/image-2.jpg" class="img-fluid d-block h-100 w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image-3.jpeg" class="img-fluid d-block h-100 w-100"  alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/image-4.jpg" class="img-fluid d-block h-100 w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  
+            <!-- Banner on The Slider Begin -->
+            <div id="banner-text" class="banner position-absolute top-50 start-50 translate-middle container-fluid">
+              <h1>Get the Phone of Your Dream at an Affordable Price</h1>
+              <p class="px-5"><small>We Provide you the best stock at the cheepest rate.It's not just a phone. It's Your Identity.</small></p>
+              <a target="_blank" class="btn button" href="https://www.google.com/search?q=smart+phone+images&rlz=1C1GCEU_enBD956BD956&sxsrf=APq-WBtd-VvEipbmS7gZoKjjDEPwEs19OQ:1646170391470&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjQ_bDL7qX2AhXrT2wGHSUyDlQQ_AUoAXoECAEQAw&biw=1536&bih=722&dpr=1.25">Book Now</a>
+            </div>
+            <!-- Banner Sllider End -->
+      </section><br><br><br>
+      <!-- Image Slider End -->
+
+      <!-- Search Section Begins -->
+      <section class="container text-center">
+          <h1>Search for your <span class="span-name">Dream Phone</span></h1><br>
+
+          <!-- Search Bar -->
+          <div class="input-group mb-3 w-50 d-flex mx-auto">
+            <input id="input" type="text" class="form-control" placeholder="Search your phone catagory" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchButton()" class="button btn btn-outline-secondary" type="button" id="button-search">Search</button>
+          </div><br><br>
+
+          <!-- Spinners -->
+          <div id="spinner">
+            <div class="spinner-grow text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+
+          <!-- No Phone Found Message -->
+          <div id="noPhoneFound" class="m-4 text-center">
+
+          </div>
+
+          <!-- Details section -->
+          <div id="details-section" class="d-flex justify-content-center container">
+            <div id="details" class="m-4 d-flex justify-content-center flex-column">
+            </div>
+          </div>
+
+
+          <!-- Searched Phone List -->
+
+          <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+            
+          </div> <br> <br>
+
+      </section>
+      <!-- Extra Search Button -->
+      <div class="container text-center" id="extraSearch">
+      </div>
+    <!-- Footer Section -->
+    <footer class="text-center w-100">
+        <p class="p-5" id="footer-text">Copyright &copy; 2022 iDroid  Store. All Rights Reserved.</p>
+    </footer>
+    <!-- Bootstrap Js Link -->
+    <script src="bootstrap.bundle.js"></script>
+    <!-- Custom JS Link -->
+    <script src="script.js"></script>
+</body>
+</html>
